@@ -15,6 +15,7 @@
     config.category = AVAudioSessionCategoryPlayAndRecord;
     config.categoryOptions =
         AVAudioSessionCategoryOptionAllowBluetooth | AVAudioSessionCategoryOptionAllowBluetoothA2DP;
+    config.mode = AVAudioSessionModeVoiceChat;
 
     [session lockForConfiguration];
     NSError* error = nil;
